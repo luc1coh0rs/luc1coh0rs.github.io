@@ -1,0 +1,181 @@
+@media screen and (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+
+    .pre-text {
+        font-size: 7px;
+        animation: none;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 912px) {
+    .pre-text {
+        font-size: 17px;
+    }
+
+    .pre-button {
+        padding: 150px; /* Defina o padding desejado aqui */
+    }
+
+    /* ...outras regras para telas maiores... */
+
+
+    .pre-button pre {
+        font-size: 2em;
+    }
+
+    footer .main-text h1 {
+        font-size: 2.7em;
+    }
+
+    footer .container a i{
+        font-size: 2em;
+    }
+
+    footer .container-social-medias a {
+        background: #000;
+    }
+
+    footer .container-copyright h3{
+        font-size: 2.7em;
+    }
+
+    footer .container-copyright p {
+        font-size: 2em;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+main pre {
+    color: #3d3c3c;
+}
+
+main pre span {
+    color: #3d3c3c;
+}
+
+main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 73vh;
+    flex-direction: column;
+}
+
+main .pre-containers img {
+    height: 20vh;
+}
+
+.pre-containers {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 30vh;
+    width: 50%;
+}
+
+.pre-text {
+    color: #fff;
+}
+
+.pre-button {
+    margin-top: 50px;
+    text-decoration: none;
+    background: #3d3c3c;
+    padding: 10px;
+    color: #fff;
+    transition: all .5s;
+}
+
+
+.pre-button:hover {
+    background: #3d3c3c85   ;
+}
+
+
+footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.container-copyright {
+    margin-top: 3em;
+}
+
+footer .container-copyright h3 {
+    font-size: 1em;
+}
+
+footer .container-copyright p {
+    font-size: .7em;
+}
+
+footer .container-social-medias .main-text h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer .container-social-medias a i {
+    font-size: 1em;
+}
+
+footer .container-social-medias a {
+    color: #fff;
+    background: #3d3c3c;
+    padding: 13px;
+    border-radius: 5em;
+    transition: all .5s;
+}
+
+footer .container-social-medias a:hover {
+    background: #3d3c3c85;
+}
+
+
+.pre-text {
+    animation: blinkCursor 500ms infinite normal, typing 6s steps(50) 0s normal;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    } 
+    to {
+        width: 58em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
